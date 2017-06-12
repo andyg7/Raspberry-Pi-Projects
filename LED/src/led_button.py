@@ -34,7 +34,7 @@ try:
 		if GPIO.input(yellow_switch_pin) == False:
 			handle_pressed_pin(input_to_output[yellow_switch_pin])
 			print "Yellow button pressed!"
-		time.sleep(0.5)
+		time.sleep(0.2)
 finally:
 	print "Cleaning up!"
 	GPIO.cleanup()
